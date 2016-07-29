@@ -1,0 +1,23 @@
+#index{
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/clock.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 40%;
+}
+#index .container{
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+.col-md-4{
+  text-align: center;
+  background-color: #333;
+  background-clip: content-box;
+}
+.col-md-4 h2{
+  color: #fff;
+}
