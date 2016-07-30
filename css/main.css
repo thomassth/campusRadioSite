@@ -1,4 +1,9 @@
-#index{
+a, a:hover, a:visited, a:active{
+  color:white;
+  display:block;
+  overflow: auto;
+}
+#index .jumbotron{
   background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.7),
@@ -8,8 +13,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 40%;
+  height: 70%;
 }
-#index .container{
+#index .jumbotron .container{
   color: white;
   text-shadow: 2px 2px #000;
 }
@@ -20,4 +26,10 @@
 }
 .col-md-4 h2{
   color: #fff;
+}
+#shows .col-md-4 h2{
+  color:#888;
+}
+.notready h2, .notready a{
+  color:#888;
 }
