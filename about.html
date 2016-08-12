@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>理大校園電台 PolyU Campus Radio</title>
-
+    <style type="text/css">
+        .e-mail:before {
+            content: attr(data-website) "\0040" attr(data-user);
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+    </style>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-
+    <script src="https://use.fontawesome.com/354d312126.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,10 +52,27 @@
       </div>
     </div>
     <div class="container">
-      <p>PolyU Campus Radio is an independent society within the Hong Kong Polytechnic University Student Union. We aim to provide entertaining and informative programs to members of HKPUSU, as well as to vreate and broadcast promotional soundtracks of other societies within HKPUSU.</p>
-      <p>理大校園電台為香港理工大學學生會內之獨立屬會，致力為學生會會員提供娛樂、社會資訊，同時為學生會內其他屬會提供宣傳聲帶之製作及播放服務。</p>
+      <p>PolyU Campus Radio is operated by the Hong Kong Polytechnic University Student Union Campus Radio Provisional Executive Committee. We aim to provide entertaining and informative programs to members of HKPUSU, as well as to vreate and broadcast promotional soundtracks of other societies within HKPUSU.</p>
+      <p>理大校園電台由香港理工大學學生會校園電台臨時行政委員會運作，致力通過視聽節目為學生會會員提供娛樂及資訊，同時為學生會內其他屬會提供宣傳聲帶之製作及播放服務。</p>
     </div>
-
+    <div class="container">
+      <h1>Contact Us／聯絡我們</h1>
+      <p>Email Address／電郵地址：<span class="e-mail" data-user="oidarsupmac" data-website="kh.ude.uylop.us"></span></p>
+      <p></p>
+    </div>
+    <footer style="height:60px"></footer>
+    <footer class="footer" style="position:fixed;z-index:5">
+      <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="https://www.facebook.com/PolyUCampusRadio"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/PolyUCR"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/polyucr/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCKZabPlphSz1cEXPpV2ZR9A"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+            <li><a href="https://polyucr.wordpress.com/"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+          </ul>
+      </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
