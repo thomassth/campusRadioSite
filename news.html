@@ -49,62 +49,71 @@
     </div>
     <p class="credit">By Hustvedt - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3251509</p>
     <div class="container">
-      <div class="row">
-          <div class="col-md-4" style="background-color:#3b5998">
-            <a href="https://www.facebook.com/PolyUCampusRadio">
-            <h2>Facebook</h2>
-            <h3>消息與活動</h3>
-            </a>
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#sns" data-toggle="tab">Social Networks</a></li>
+        <li><a href="#podcast" data-toggle="tab">Podcast</a></li>
+        <li><a href="#youtube" data-toggle="tab">YouTube</a></li>
+      </ul>
+      <section class="tab-content">
+        <article class="tab-pane fade in active" id="sns">
+          <h3>Social Networks</h3>
+          <div class="row">
+            <div class="col-md-4" style="background-color:#3b5998">
+              <a href="https://www.facebook.com/PolyUCampusRadio">
+                <h2>Facebook</h2>
+                <h3>消息與活動</h3>
+              </a>
+            </div>
+            <div class="col-md-4" style="background-color:#00aced">
+              <a href="https://twitter.com/PolyUCR">
+                <h2>Twitter</h2>
+                <h3>A wider world of news</h3>
+              </a>
+            </div>
+            <div class="col-md-4" style="background-color:#9b6954">
+              <a href="https://www.instagram.com/polyucr/">
+                <h2>Instagram</h2>
+                <h3>校園電台幕後趣聞</h3>
+              </a>
+            </div>
+          </div>        
+      </article>
+        <article class="tab-pane fade" id="podcast">
+          <h3>Podcast</h3>
+          <div class="row">
+            <div class="col-md-4" style="">
+              <a href="http://polyucr.wordpress.com/category/podcast/feed/"><h2>Podcast</h2></a>
+                <a class="notready" href=""><h3>iTunes 即將推出</h3></a>
+                <a href="https://subscribeonandroid.com/polyucr.wordpress.com/category/podcast/feed/"><h3>android</h3></a>
+            </div>
+            <div class="col-md-4" style="background-color:#21759b">
+              <a href="https://polyucr.wordpress.com/">
+                <h2>Wordpress</h2>
+                <h3>校園電台節目庫</h3>
+              </a>
+            </div>
           </div>
-          <div class="col-md-4" style="background-color:#00aced">
-            <a href="https://twitter.com/PolyUCR">
-            <h2>Twitter</h2>
-            <h3>A wider world of news</h3>
-            </a>
-          </div>
-        </a>
-          <div class="col-md-4" style="background-color:#9b6954">
-            <a href="https://www.instagram.com/polyucr/">
-            <h2>Instagram</h2>
-            <h3>校園電台幕後趣聞</h3>
-            </a>
-          </div>
-      </div>
-    </div>
-    <div class="container" style="margin-top: 2%;">
-      <div class="row">
-          <div class="col-md-4" style="background-color:#bb0000">
-            <a href="https://www.youtube.com/channel/UCKZabPlphSz1cEXPpV2ZR9A">
-            <h2>Youtube</h2>
-            <h3>最新節目及影片</h3>
-            </a>
-          </div>
-          <div class="col-md-4" style="">
-            <a href="http://polyucr.wordpress.com/category/podcast/feed/"><h2>Podcast</h2></a>
-            <a class="notready" href=""><h3>iTunes 即將推出</h3></a>
-            <a href="https://subscribeonandroid.com/polyucr.wordpress.com/category/podcast/feed/"><h3>android</h3></a>
-          </div>
-        </a>
-          <div class="col-md-4" style="background-color:#21759b">
-            <a href="https://polyucr.wordpress.com/">
-            <h2>Wordpress</h2>
-            <h3>校園電台節目庫</h3>
-            </a>
-          </div>
-        </a>
-      </div>
+        </article>
+        <article class="tab-pane fade" id="youtube">
+          <h3>YouTube</h3>
+              <div class="col-md-4" style="background-color:#bb0000">
+                <a href="https://www.youtube.com/channel/UCKZabPlphSz1cEXPpV2ZR9A">
+                  <h2>Youtube</h2>
+                  <h3>最新節目及影片</h3>
+                </a>
+              </div>
+        </article>
+      </section>
     </div>
     <footer style="height:60px"></footer>
     <footer class="footer" style="position:fixed;z-index:5">
-      <div class="container">
-        <ul class="nav navbar-nav">
-            <li><a href="https://www.facebook.com/PolyUCampusRadio"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/PolyUCR"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com/polyucr/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCKZabPlphSz1cEXPpV2ZR9A"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-            <li><a href="https://polyucr.wordpress.com/"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
-          </ul>
+      <div class="btn-group">
+          <a href="https://www.facebook.com/PolyUCampusRadio"  class="btn btn-primary"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/PolyUCR"  class="btn btn-primary"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/polyucr/"  class="btn btn-primary"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/channel/UCKZabPlphSz1cEXPpV2ZR9A"  class="btn btn-primary"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          <a href=""  class="btn btn-primary"><i class="fa fa-rss" aria-hidden="true"></i></a>
+          <a href="https://polyucr.wordpress.com/"  class="btn btn-primary"><i class="fa fa-wordpress" aria-hidden="true"></i></a>
       </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
