@@ -8,37 +8,6 @@ a, a:hover, a:visited, a:active{
   overflow: auto;
   text-decoration: none;
 }
-#index .jumbotron{
-  background-color: transparent;
-}
-#index{
-  background-image:    
-  linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0)),
-      url("../img/clock.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 40%;
-  height:100vh;
-}
-#shows .jumbotron{
-  background-image: url("../img/cover.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-}
-#news .jumbotron{
-  background-image: url("../img/screen.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#about .jumbotron{
-  background-image: url("../img/stairs.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-}
 .jumbotron .container{
   color: white;
   text-shadow: 2px 2px #000;
@@ -90,7 +59,4 @@ a, a:hover, a:visited, a:active{
 }
 th,td{
   font-size: large
-}
-td{
-
 }
