@@ -5,7 +5,6 @@
 div{
     z-index: 1;
     position: absolute;
-    background-color: rgba(20,20,20,0.5);
 }
 #logoa{
     width: 28vw;
@@ -64,8 +63,8 @@ div{
     </style>
 </head>
 <body>
-<div id="logoa"></div>
-<div id="addressa"></div>
+<a href=index.html><div id="logoa"></div></a>
+<a href="https://goo.gl/maps/ysnSgCyg98B2"><div id="addressa"></div></a>
 <div id="pa"></div>
 <div id="evpa"></div>
 <div id="ivpa"></div>
@@ -1225,12 +1224,48 @@ div{
 <map></map>
 <script>
 $(document).ready(function(){
-     $("#p").mouseover(function(){
-         $("#p").css("fill", "red");
+     $("#pa").mouseover(function(){
+         $("#p").css("fill", "rgba(86,36,192,1)");
      });
-     $("#p").mouseout(function(){
+     $("#pa").mouseout(function(){
          $("#p").css("fill","black")
-     })
+     });
+     $("#evpa").mouseover(function(){
+         $("#evp").css("fill", "red");
+     });
+     $("#evpa").mouseout(function(){
+         $("#evp").css("fill","black")
+     });
+     $("#ivpa").mouseover(function(){
+         $("#ivp").css("fill", "red");
+     });
+     $("#ivpa").mouseout(function(){
+         $("#ivp").css("fill","black")
+     });
+     $("#fina").mouseover(function(){
+         $("#fin").css("fill", "red");
+     });
+     $("#fina").mouseout(function(){
+         $("#fin").css("fill","black")
+     });
+     $("#cpda").mouseover(function(){
+         $("#cpd").css("fill", "red");
+     });
+     $("#cpda").mouseout(function(){
+         $("#cpd").css("fill","black")
+     });
+     $("#techa").mouseover(function(){
+         $("#tech").css("fill", "red");
+     });
+     $("#techa").mouseout(function(){
+         $("#tech").css("fill","black")
+     });
+     $("#gena").mouseover(function(){
+         $("#gen").css("fill", "red");
+     });
+     $("#gena").mouseout(function(){
+         $("#gen").css("fill","black")
+     });
 });
 
 </script>
