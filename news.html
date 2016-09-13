@@ -71,12 +71,12 @@
     <p class="credit">By Hustvedt - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3251509</p>
     <div class="container">
       <ul class="nav nav-tabs nav-justified">
-        <li class="active"><a href="#sns" data-toggle="tab">Social Networks</a></li>
-        <li><a href="#podcast" data-toggle="tab">Podcast</a></li>
+        <li><a href="#sns" data-toggle="tab">Social Networks</a></li>
+        <li class="active"><a href="#podcast" data-toggle="tab">Podcast</a></li>
         <li><a href="#youtube" data-toggle="tab">YouTube</a></li>
       </ul>
       <section class="tab-content">
-        <article class="tab-pane fade in active" id="sns">
+        <article class="tab-pane" id="sns">
           <h3>Social Networks</h3>
           <div class="row">
             <div class="col-md-4" style="background-color:#3b5998">
@@ -99,7 +99,7 @@
             </div>
           </div>        
       </article>
-        <article class="tab-pane fade" id="podcast">
+        <article class="tab-pane active" id="podcast">
           <h3>Podcast</h3>
           <div class="row">
             <div class="col-md-4" style="">
@@ -115,7 +115,7 @@
             </div>
           </div>
         </article>
-        <article class="tab-pane fade" id="youtube">
+        <article class="tab-pane" id="youtube">
           <h3>YouTube</h3>
               <div class="col-md-4" style="background-color:#bb0000">
                 <a href="https://www.youtube.com/channel/UCKZabPlphSz1cEXPpV2ZR9A">
@@ -139,6 +139,14 @@
         </div>
       </div>
     </footer>
+    <script>
+      $(document).ready(function(){
+        $(function () {
+          var activeTab = $('[href=' + location.hash + ']');
+          activeTab && activeTab.tab('show');
+        });
+      };
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
