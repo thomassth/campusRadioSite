@@ -7,40 +7,41 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>理大校園電台 PolyU Campus Radio</title>
     <style type="text/css">
-    html{
-    min-height:100%;/* make sure it is at least as tall as the viewport */
-    position:relative;
-    }
-    body{
-        height:100%; /* force the BODY element to match the height of the HTML element */
-    }
-    .bg{
-      background-image:    
-        linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0)),
-            url("img/clock.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 40%;
-      position:absolute;
-      top:0;
-      bottom:0;
-      left:0;
-      right:0;
-      overflow:hidden;
-      z-index:-1; /* Remove this line if it's not going to be a background! */
+      html{
+      min-height:100%;/* make sure it is at least as tall as the viewport */
+      position:relative;
       }
-    #index .jumbotron{
-      background-color: transparent;
-      background-image: none;
-    }
-    @media (min-width: 544px) {
-      .navbar-brand:after{
-        content:" PolyU Campus Radio";
+      body{
+          height:100%; /* force the BODY element to match the height of the HTML element */
       }
-    }
+      .bg{
+        background-image:    
+          linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0)),
+              url("img/clock.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 40%;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        overflow:hidden;
+        z-index:-1; /* Remove this line if it's not going to be a background! */
+        }
+      #index .jumbotron{
+        background-color: transparent;
+        background-image: none;
+      }
+      @media (min-width: 544px) {
+        .navbar-brand:after{
+          content:" PolyU Campus Radio";
+        }
+      }
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -100,7 +101,12 @@
       <div class="stripe-left" style="height: 4vh; width: 50%;float:left"></div>
       <div class="stripe-right" style="height: 4vh; width: 50%;float:right"></div>
       <h1 style="color:white">工作人員招募計畫</h1>
-      <h1 style="color:white">Production Crew Recruitment Scheme</h1>
+      <h1 style="color:white;font-family: 'Share Tech Mono', monospace;">Production Crew Recruitment Scheme</h1>
+      <h1>
+        <div id="clockdiv" style="color:yellow;font-family: 'Share Tech Mono', monospace;">
+          <span class="days"></span>:<span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>
+        </div>
+      </h1>
       <div class="stripe-left" style="height: 4vh; width: 50%;float:left"></div>
       <div class="stripe-right" style="height: 4vh; width: 50%;float:right"></div>
       </a>
@@ -145,5 +151,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+          'total': t,
+          'days': days,
+          'hours': hours,
+          'minutes': minutes,
+          'seconds': seconds,
+        };
+      }
+
+      function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector('.days');
+        var hoursSpan = clock.querySelector('.hours');
+        var minutesSpan = clock.querySelector('.minutes');
+        var secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+          var t = getTimeRemaining(endtime);
+
+          daysSpan.innerHTML = t.days;
+          hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+          minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+          secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+          if (t.total <= 0) {
+            clearInterval(timeinterval);
+          }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+      }
+
+      var deadline = "2016-09-23";
+      initializeClock('clockdiv', deadline);
+    </script>
   </body>
 </html>
