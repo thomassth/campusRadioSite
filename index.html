@@ -104,7 +104,7 @@
       <h1 style="color:white;font-family: 'Share Tech Mono', monospace;">Production Crew Recruitment Scheme</h1>
       <h1>
         <div id="clockdiv" style="color:yellow;font-family: 'Share Tech Mono', monospace;">
-          <span class="days"></span>:<span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>
+          <span class="days"></span>:<span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>:<span id="timer"></span>
         </div>
       </h1>
       <div class="stripe-left" style="height: 4vh; width: 50%;float:left"></div>
@@ -193,6 +193,22 @@
 
       var deadline = "2016-09-23T16:00:00";
       initializeClock('clockdiv', deadline);
+
+      var count = Date.parse(deadline) - Date.parse(new Date());
+
+      var counter = setInterval(timer, 10); //10 will  run it every 100th of a second
+
+      function timer()
+      {
+          if (count <= 0)
+          {
+              clearInterval(counter);
+              return;
+          }
+          count--;
+          document.getElementById("timer").innerHTML=('0' + count%100).slice(-2); 
+      }
+
     </script>
   </body>
 </html>
