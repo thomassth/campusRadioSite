@@ -37,7 +37,7 @@ updateClock();
 var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = "2016-09-23T16:00:00";
+var deadline = new Date(Date.UTC(2016, 8, 23, 16, 0, 0));
 initializeClock('clockdiv', deadline);
 
 var count = Date.parse(deadline) - Date.parse(new Date());
