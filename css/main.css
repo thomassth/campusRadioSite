@@ -1,5 +1,5 @@
-body{
-  font-family: arial,sans-serif;
+body,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  font-family: "HanHei TC","MHei","PingFang HK","STHeitiTC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .credit{
   font-size: xx-small;
