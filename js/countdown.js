@@ -29,7 +29,10 @@ function updateClock() {
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
     if (t.total <= 0) {
-    clearInterval(timeinterval);
+    daysSpan.innerHTML = 0;
+    hoursSpan.innerHTML = 00;
+    minutesSpan.innerHTML = 00;
+    secondsSpan.innerHTML = 00;
     }
 }
 
@@ -40,7 +43,7 @@ var timeinterval = setInterval(updateClock, 1000);
 var deadline = new Date(Date.UTC(2016, 8, 23, 16, 0, 0));
 initializeClock('clockdiv', deadline);
 
-var count = Date.parse(deadline) - Date.parse(new Date());
+var count = Date.parse(new Date(Date.UTC(2016, 8, 26, 10, 0, 0))) - Date.parse(new Date());
 
 var counter = setInterval(timer, 10); //10 will  run it every 100th of a second
 
@@ -54,3 +57,17 @@ function timer()
     count--;
     document.getElementById("timer").innerHTML=('0' + count%100).slice(-2); 
 }
+
+function flashtext(ele,col) {
+    var tmpColCheck = document.getElementById( ele ).style.color;
+
+      if (tmpColCheck === 'yellow') {
+        document.getElementById( ele ).style.color = col;
+      } else {
+        document.getElementById( ele ).style.color = 'yellow';
+      }
+    } 
+
+    setInterval(function() {
+        flashtext('clockdiv','red');
+    }, 500 ); //set an interval timer up to repeat the function
