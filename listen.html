@@ -21,7 +21,7 @@
     
       ga('create', 'UA-84002178-1', 'auto');
       ga('send', 'pageview');
-    
+
     </script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -58,34 +58,47 @@
     </header>
     <div class="jumbotron">
       <div class="container">
-        <h1>This is feedback</h1>
-        <p>New ideas? Questions? Just tell us!</p>
-        <p>有新諗頭？有問題？即管話比我地知。</p>
+        <h1>Listen</h1>
+        <h1>收聽</h1>
+        <p>Follow our shows in your way.</p>
+        <p>用你的方式收聽校園電台節目。</p>
       </div>
     </div>
-    <div class="container">
-<div id="disqus_thread"></div>
-<script>
 
-/**
- *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
- *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
-/*
-var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = '//http-web-su-polyu-edu-hk-campusradio.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                    
+    <div class="container">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#podcast" data-toggle="tab">Podcast</a></li>
+        <li><a href="#youtube" data-toggle="tab">YouTube</a></li>
+      </ul>
+      <section class="tab-content">
+        <article class="tab-pane active" id="podcast">
+          <h3>Podcast</h3>
+          <div class="row">
+            <div class="col-md-4" style="">
+              <a href="http://polyucr.wordpress.com/category/podcast/feed/"><h2>Podcast</h2></a>
+                <a href="https://itunes.apple.com/hk/podcast/li-da-xiao-yuan-dian-tai-polyu/id1151315466?mt=2"><h3>iTunes</h3></a>
+                <a href="https://subscribeonandroid.com/polyucr.wordpress.com/category/podcast/feed/"><h3>android</h3></a>
+            </div>
+            <div class="col-md-4" style="background-color:#21759b">
+              <a href="https://polyucr.wordpress.com/">
+                <h2>Wordpress</h2>
+                <h3>校園電台節目庫</h3>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="tab-pane" id="youtube">
+          <h3>YouTube</h3>
+              <div class="col-md-4" style="background-color:#bb0000">
+                <a href="https://www.youtube.com/channel/UCKZabPlphSz1cEXPpV2ZR9A">
+                  <h2>Youtube</h2>
+                  <h3>最新節目及影片</h3>
+                </a>
+              </div>
+        </article>
+      </section>
     </div>
+
 
     <footer style="height:60px"></footer>
     <footer class="footer" style="position:fixed;z-index:5">
@@ -104,6 +117,5 @@ var disqus_config = function () {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script id="dsq-count-scr" src="//http-web-su-polyu-edu-hk-campusradio.disqus.com/count.js" async></script>
   </body>
 </html>
