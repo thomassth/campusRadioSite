@@ -7,6 +7,8 @@ body,.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 }
 a, a:hover, a:visited, a:active{
   color:black;
+  display:block;
+  overflow: auto;
   text-decoration: none;
 }
 .jumbotron .container{
@@ -75,7 +77,4 @@ th,td{
     yellow 10px,
     yellow 20px
   );
-}
-h3 a, h3 a:hover,h3 a:visited,h3 a:active{
-  color: blue
 }
