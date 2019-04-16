@@ -1,6 +1,4 @@
-# thomassth.github.io
-
-## PolyU campus radio website v1 (~2017)
+# PolyU campus radio website v1 (~2017)
 
 ~~This is the testing facility of PolyU Campus Radio website.~~ 
 
